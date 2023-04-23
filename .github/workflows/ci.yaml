@@ -17,5 +17,8 @@ jobs:
         with:
           path: "./requirements.txt"
       - name: Run tests
-        run: pytest data-collection/test_main.py  
+        run: pytest data-collection/test_main.py
+        env:
+          DOWNLOAD_PATH: ${{ secrets.DOWNLOAD_PATH }}
+        
       
