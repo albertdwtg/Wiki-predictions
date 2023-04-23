@@ -19,6 +19,6 @@ jobs:
       - name: Run tests
         run: pytest data-collection/test_main.py
         env:
-          DOWNLOAD_PATH: ${{ secrets.DOWNLOAD_PATH }}
+          DOWNLOAD_PATH: r"C:\Users\dewat\Downloads"
         
       
