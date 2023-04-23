@@ -3,8 +3,12 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
 import glob
-from variables import DOWNLOAD_PATH
+#from variables import DOWNLOAD_PATH
 from typing import List
+
+
+DOWNLOAD_PATH = os.getenv("DOWNLOAD_PATH")
+print(DOWNLOAD_PATH)
 
 print("hello")
 root = os.path.dirname(os.path.dirname(__file__))
