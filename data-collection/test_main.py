@@ -1,8 +1,10 @@
 from main import get_sorted_files_from_directory, collect_affluence_stats
-from variables import DOWNLOAD_PATH
+#from variables import DOWNLOAD_PATH
 from typing import List
 import random
+import os
 
+DOWNLOAD_PATH = os.getenv("DOWNLOAD_PATH")
 
 def test_return_type_get_sorted_files():
     list_of_files = get_sorted_files_from_directory(DOWNLOAD_PATH)
